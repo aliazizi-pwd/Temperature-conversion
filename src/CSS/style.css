@@ -12,3 +12,19 @@ body {
      background: -webkit-linear-gradient(to top, #004e92, #000428);
      background: linear-gradient(to bottom, #004e92, #000428); 
 }
+/* set style from input */
+.input-value {
+     width: 300px;
+     height: 40px;
+     background: #fffafa;
+     border: none;
+     outline: none;
+     padding: 5px;
+}
+.select {
+     width: 160px;
+     height: 40px;
+     background: #daa520;
+     border: none;
+     outline: none;
+}

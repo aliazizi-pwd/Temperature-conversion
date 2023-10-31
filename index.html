@@ -7,10 +7,32 @@
      <link rel="stylesheet" href="./src/CSS/style.css">
      <link rel="stylesheet" href="./data/bootstrap.min.css">
      <link rel="image icon" href="./public/image/Temp Converions.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
-     
-
+     <section class="part-one">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+               <div class="display-select rounded-3 container mt-5">
+                    <h2 class="text-center text-capitalize text-light fs-4">Convert °C to °F</h2>
+                    <div class="d-flex flex-row justify-content-center align-items-center mt-5 mb-5">
+                         <input type="text" class="input-value rounded-2" placeholder="write °C (Celsius)">
+                         <select name="select-change" class="select ms-2 rounded-2" id="change">
+                              <option value="°C to °F">Celsius to Fahrenheit</option>
+                              <option value="°F to °C">Fahrenheit to Celsius</option>
+                              <option value="°K to °C">Kelvin to Celsius</option>
+                              <option value="°C to °K">Celsius to Kelvin</option>
+                              <option value="°R to °C">Rankine to Celsius</option>
+                              <option value="°C to °R">Celsius to Rankine</option>
+                         </select>
+                    </div>
+                    <h5 class="text-light text-center text-capitalize"></h5>
+                    <div class="d-flex flex-row justify-content-center align-items-center mt-5">
+                         <button class="btn ms-2 bg-success text-light border-1 border-light"> <i class="fa fa-temperature-low"></i> Convert</button>
+                         <button class="btn ms-2 bg-success text-light border-1 border-light">Reset</button>
+                    </div>
+               </div>
+          </div>
+     </section>
      <!-- Add Touch JS -->
      <script src="./src/javaScript/app.js"></script>
      <script src="./data/bootstrap.min.js"></script>
