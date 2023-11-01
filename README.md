@@ -2,7 +2,7 @@
 A mini-project about a detailed temperature (Celsius-Fahrenheit-Klevin-Rankin) conversion website written to enhance JavaScript coding and DOM element changes.
 
 ## Preview
-<img width=100% src="./public/Image/demo.png">
+<img width=100% src="./public/Image/demo-pic.png">
 
 ## Checklist Features
 
