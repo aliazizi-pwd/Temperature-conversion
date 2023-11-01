@@ -59,9 +59,8 @@ function getChangeTemp (e) {
      showResult.innerHTML = "Looding...";
 }
 
-changeTemp.addEventListener("change" , getChangeTemp);
 
-
+// Convert Temperature...
 function convertTemp () {
      // Convert...
      // return Temp is Changed...
@@ -123,5 +122,14 @@ function convertTemp () {
      } , 5000);
 }
 
+// Button Click Reset App...
+function resetApp () {
+     $.location.reload();
+}
 
+
+
+// Set Event Handler...
+changeTemp.addEventListener("change" , getChangeTemp);
 btnConvert.addEventListener("click" , convertTemp);
+btnReset.addEventListener("click" , resetApp);
