@@ -9,11 +9,12 @@ const looding = $.querySelector(".looding");
 const btnConvert = $.querySelector(".btn-convert");
 const btnReset = $.querySelector(".btn-reset");
 const titleBody = $.querySelector("title");
-
+let temp = "";
 
 
 function getChangeTemp (e) {
-     let temp = changeTemp.value;
+     temp = e.target.value;
+     modal.style.color = "green";
      if (temp === "°C to °F") {
           // Celsius to Fahrenheit
           titleBody.innerHTML = "Temp Conversion | °C to °F";
@@ -57,3 +58,32 @@ function getChangeTemp (e) {
 }
 
 changeTemp.addEventListener("change" , getChangeTemp);
+
+
+function convertTemp () {
+     // Convert...
+     // return Temp is Changed...
+     anime({
+          targets: '.modal-text',
+          translateX: -50,
+     });
+
+     if (convertValue.value === "") {
+          modal.innerHTML = "Please enter the selected numerical value";
+          modal.style.color = "red";
+     } else if (isNaN(convertValue.value)) {
+          modal.innerHTML = "The entered value is not correct. Try again";
+          modal.style.color = "red";
+     }
+
+     setTimeout( () => {
+          modal.innerHTML = "";
+          anime({
+               targets : '.modal-text',
+               translateX: 0,
+          });
+     } , 5000);
+}
+
+
+btnConvert.addEventListener("click" , convertTemp);
